@@ -15,10 +15,6 @@ app.get('/', (req, res) => {
     res.send("Hello World!");
 });
 
-app.get('/posts', (req, res) => {
-    res.send("Hello World Again!");
-});
-
 // Connect To DB Here 
 mongoose.connect('mongodb://localhost:27017/UsersApi', { useNewUrlParser: true }, () => console.log("Connected to DB!"))
 
